@@ -32,12 +32,12 @@ if build_scatter:
     st.write(
         'Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
 
-# Crear un scatter plot utilizando plotly.graph_objects
-fig = go.Figure(
-    data=[go.Scatter(x=car_data['odometer'], y=car_data['price'], mode='markers')])
+    # Crear un scatter plot utilizando plotly.graph_objects
+    fig = go.Figure(
+        data=[go.Scatter(x=car_data['odometer'], y=car_data['price'], mode='markers')])
 
-# Titulo del gráfico
-fig.update_layout(title_text='Relación entre Odómetro y Precio')
+    # Titulo del gráfico
+    fig.update_layout(title_text='Relación entre Odómetro y Precio')
 
-# Mostrar el gráfico Plotly
-st.plotly_chart(fig, use_container_width=True)
+    # Mostrar el gráfico Plotly
+    st.plotly_chart(fig, use_container_width=True)
